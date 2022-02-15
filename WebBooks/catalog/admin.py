@@ -12,6 +12,7 @@ admin.site.register(Author, AuthorAdmin)
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'genre', 'language', 'display_author')
+    list_filter = ('genre', 'author')
 
 
 admin.site.register(Genre)
@@ -21,4 +22,4 @@ admin.site.register(Status)
 
 @admin.register(BookInstance)
 class BookInstanceAdmin(admin.ModelAdmin):
-    pass
+    list_filter = ('book', 'status')
