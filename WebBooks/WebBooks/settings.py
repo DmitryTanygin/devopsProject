@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'webbooks',
         'USER': 'tanyginda',
-        'PASSWORD': '71RE93SN',
+        'PASSWORD': 'tanyginda',
         'HOST': 'localhost',
         'PORT': '',
     }
